@@ -1,0 +1,201 @@
+/**
+ * 弹性盒子布局
+ */
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    height: 100%;
+}
+
+.item1 {
+    flex: 1;
+}
+
+.item2 {
+    flex: 2;
+}
+
+.item3 {
+    flex: 3;
+}
+
+.item4 {
+    flex: 4;
+}
+
+.item5 {
+    flex: 5;
+}
+
+.item1, .item2, .item3, .item4, .item5 {
+    position: relative;
+}
+
+
+/**
+ * 弹性盒子布局
+ */
+
+
+/**
+ * diaplay:none;
+ */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+
+/**
+ * diaplay:none;
+ */
+
+
+/**
+ * 关于文本
+ */
+
+.txt-center {
+    text-align: center
+}
+
+.txt-left {
+    text-align: left;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.normal-txt {
+    font-size: 0.9rem;
+}
+
+.small-txt {
+    font-size: 0.8rem;
+}
+
+.tiny-txt {
+    font-size: 0.6rem;
+}
+
+.tiny-color {
+    color: #666;
+}
+
+.txt-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/**
+ * 关于文本
+ */
+
+
+/**
+  * 清除样式
+  */
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+}
+
+
+/*针对IE6*/
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/**
+ * 清除样式
+ */
+
+
+/**
+ * 边距
+ */
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-tb10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p-tb20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.p-l5 {
+    padding-left: 5px;
+}
+
+.p-l10 {
+    padding-left: 10px;
+}
+
+.m-t10 {
+    margin-top: 10px;
+}
+
+
+/**
+ * 边距
+ */
+
+
+/**
+ * 位置
+ */
+
+.l5 {
+    left: 5px;
+}
+
+.r5 {
+    right: 5px;
+}
+
+
+/**
+ * 位置
+ */
+
+
+/**
+ * 颜色
+ */
+
+.bg-while {
+    background-color: #fff;
+}
+
+.bg-gray {
+    background-color: #e2e2e2;
+}
+
+
+/**
+  * 颜色
+  */

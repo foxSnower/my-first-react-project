@@ -1,0 +1,11 @@
+.tab-button {
+    height: 44px;
+    line-height: 44px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.tab-button .flex-item.on {
+    background-color: #33251a;
+    color: #fff;
+}

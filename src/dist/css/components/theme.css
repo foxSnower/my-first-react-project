@@ -1,0 +1,26 @@
+/**
+ * 针对不同项目设置不同的主题颜色
+ */
+
+
+/*body, html {
+    font-size: 62.5%;
+    font-size: 10px;
+}*/
+
+
+/*古典样式*/
+
+
+/*咖啡色#33251a*/
+
+
+/*浅啡色#d0c5a7*/
+
+.theme-bg {
+    background-color: #f0e4c4;
+}
+
+.header-bg {
+    background-color: #33251a;
+}

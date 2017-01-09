@@ -1,0 +1,33 @@
+.m-article {
+    padding: 15px;
+    background-image: url(../../img/icons/panel_list_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+.m-article .article-title {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.m-article .article-content {
+    text-align: justify;
+    font-size: 0.9rem;
+}
+
+.m-article .article-p {
+    text-indent: 2rem;
+    padding: 5px 0;
+}
+
+.article-img {
+    width: 70%;
+}

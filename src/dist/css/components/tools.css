@@ -1,0 +1,60 @@
+/*加载数据成功前的loding*/
+
+.loading {
+    width: 160px;
+    height: 160px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: -80px;
+    background: url(../../img/icons/loading.gif) no-repeat;
+    background-size: contain;
+}
+
+
+/*加载更多的loading*/
+
+.loading-more {
+    text-align: center;
+    line-height: 50px;
+    font-size: 0.9rem;
+}
+
+
+/*暂无数据的样式*/
+
+.nodata-bg {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../../img/icons/panel_list_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+.nodata {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    margin-top: -60px;
+    font-size: 0.8rem;
+    line-height: 2;
+}
+
+.nodata-img {
+    width: 120px;
+    height: 120px;
+    background: url(../../img/icons/nodata.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.nodata-txt {
+    text-align: center;
+    color: #666;
+}

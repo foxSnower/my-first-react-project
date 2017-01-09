@@ -1,0 +1,79 @@
+.palace {
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.palace .palace-menu {
+    width: 33.3%;
+}
+
+.border-show {
+    position: relative;
+}
+
+.border-show:before {
+    content: ' ';
+    border-bottom: 1px solid #e1e1e1;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: -1px;
+}
+
+.border-show:after {
+    content: ' ';
+    border-right: 1px solid #e1e1e1;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: -1px;
+}
+
+.icon-palace {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    color: #fff;
+}
+
+.palace-text {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.palace-left-01 {
+    background-image: url(../../img/icons/palace_left_01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.palace-left-02 {
+    background-image: url(../../img/icons/palace_left_02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.palace-left-03 {
+    background-image: url(../../img/icons/palace_left_03.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.palace-right-01 {
+    background-image: url(../../img/icons/palace_right_01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.palace-right-02 {
+    background-image: url(../../img/icons/palace_right_02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
