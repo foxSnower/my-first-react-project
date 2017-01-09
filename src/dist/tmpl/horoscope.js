@@ -21,10 +21,10 @@ export default class Horoscope extends Component {
         // };
         $.ajax({
             type:"get",
-            url:"http://web.juhe.cn:8080/constellation/getAll?consName=双鱼座&key="+key.horoscope,
+            url:"/api/constellation/getAll?consName=双鱼座&key="+key.horoscope,
             // data:Jdata,
-            dataType: 'jsonp',
-            jsonp:'callback',
+            // dataType: 'jsonp',
+            // jsonp:'callback',
             // isonpCallback:'name',
             cache: false,
             success: function (data) {
