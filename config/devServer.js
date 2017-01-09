@@ -12,6 +12,7 @@ const DashboardPlugin = require('webpack-dashboard/plugin');
 const config = require('./webpack.config.dev');
 //加载koa服务器模块
 const koa = require('koa');
+const fetch = require('isomorphic-fetch')
 
 //配置及初始化Koa服务器
 var creatServer = () => {
@@ -39,12 +40,38 @@ var creatServer = () => {
     app.use(require('koa-static')(path.join(process.cwd(), '/assets')));
     //调用koa列出开发目录
     app.use(require('koa-serve-index')(path.join(process.cwd(), '/src')));
+    // 代理
+    app.use(function *(next){
+        // console.log(this.request)
+        if(this.request.method === "GET") {
+            // 判断是否是 api 请求
+            // let pre = path.parse(this.request.url)[0]
+            // console.log(pre)
+            if(this.request.url.indexOf('api') > -1) {
+                // console.log(this.request.url.slice(3))
+                try {
+                    let res = yield fetch('http://web.juhe.cn:8080'+ this.request.url.slice(4)) 
+                    // console.log(res)
+                    let json = yield res.json()
+                    if(this.request)
+                    this.body = json
+                    next
+                }catch(err) {
+                    this.body = 'not found'
+                    next
+                }
+            }
+            next
+        }
+        next
+    });
     //调用开启5000端口用来测试和开发
     app.listen(5000, function(err) {
         if (err) { console.log(err); }
         console.log('Listening at localhost:5000');
     });
 };
+
 
 //调用创建koa服务器方法
 creatServer();
