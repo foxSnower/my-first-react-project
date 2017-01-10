@@ -29,3 +29,11 @@
 /*载入文章样式*/
 
 @import url(./article.css);
+
+/*载入进度条样式*/
+
+@import url(./process.css);
+
+/*载入进度条样式*/
+
+@import url(./zzsc.css);
